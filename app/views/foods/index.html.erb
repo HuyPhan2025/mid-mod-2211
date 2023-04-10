@@ -1,0 +1,10 @@
+<h1>Total Hits: <%= @foods[:total_hit] %> </h1>
+
+<% @foods[:foods].each do |food| %>
+<div id= "id-<%= food.gtinUpc %>">
+ <p>GTIN/UPC: <%= food.gtinUpc %> </p>
+ <p>Description: <%= food.description %> </p>
+ <p>Brand Owner: <%= food.brandOwner %> </p>
+ <p>Ingredients: <%= food.ingredients %> </p>
+ </div>
+<%end%>
